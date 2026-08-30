@@ -1,15 +1,521 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Jessica Bernasconi</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Jessica — Diseño gráfico y de identidad visual para pequeñas empresas
+    </title>
+    <meta
+      name="description"
+      content="Diseño de identidad visual, branding y diseño editorial para pequeñas empresas, marcas emergentes y negocios independientes. Portfolio y servicios de diseño gráfico."
+    />
+    <link rel="canonical" href="https://www.tudominio.com/" />
 
-<body>
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Jessica — Diseño gráfico y de identidad visual"
+    />
+    <meta
+      property="og:description"
+      content="Identidad visual, branding y diseño editorial para pequeñas empresas y marcas emergentes."
+    />
+    <meta property="og:image" content="assets/og-cover.jpg" />
+    <meta property="og:locale" content="es_ES" />
 
-    <h1>Mi portfolio</h1>
-    <p>Diseño gráfico y comunicación visual.</p>
+    <!-- Fuentes: únicamente Playfair Display y Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-</body>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Datos estructurados: Person + WebSite -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jessica",
+        "jobTitle": "Diseñadora gráfica y de identidad visual",
+        "url": "https://www.tudominio.com/",
+        "sameAs": []
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Jessica — Diseño gráfico",
+        "url": "https://www.tudominio.com/"
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="#inicio" class="logo-link" aria-label="Ir a inicio">
+          <img
+            src="assets/logo.svg"
+            alt="Jessica Designs"
+            class="logo"
+            width="180"
+            height="110"
+          />
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-controls="siteNav"
+          aria-label="Abrir menú"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="site-nav" id="siteNav">
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+          <a href="#contacto" class="btn btn-accent nav-cta">Hablemos</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <!-- HERO -->
+      <section id="inicio" class="hero">
+        <div class="hero-inner">
+          <p class="eyebrow reveal">Diseño gráfico &amp; identidad visual</p>
+          <h1 class="hero-title reveal">
+            Diseño con criterio editorial para marcas que están empezando a
+            contar su historia.
+          </h1>
+          <p class="hero-desc reveal">
+            Ayudo a pequeñas empresas, marcas emergentes y negocios
+            independientes a construir una identidad visual coherente: desde el
+            logo hasta los patrones gráficos, la papelería y la web. Sin
+            plantillas. Con criterio.
+          </p>
+          <div class="hero-actions reveal">
+            <a href="#portfolio" class="btn btn-outline">Ver portfolio</a>
+            <a href="#contacto" class="btn btn-primary"
+              >Hablemos de tu proyecto</a
+            >
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <figure class="hero-figure">
+            <div class="hero-figure-frame" id="heroFigureFrame">
+              <img
+                src="assets/hero.png"
+                alt="Detalle de una composición de diseño gráfico con fragmentos tipográficos y piezas de identidad visual"
+                width="640"
+                height="800"
+                decoding="async"
+                id="heroImg"
+              />
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <!-- SERVICIOS -->
+      <section id="servicios" class="servicios">
+        <div class="section-inner">
+          <p class="eyebrow reveal">Qué puedo hacer por tu marca</p>
+          <h2 class="reveal">Servicios de diseño</h2>
+
+          <div class="servicios-grid">
+            <article class="servicio-card reveal">
+              <span class="servicio-num">01</span>
+              <h3>Identidad visual</h3>
+              <p>
+                Logo, paleta de color, tipografía y sistema visual completo,
+                pensado para que tu marca se reconozca de un vistazo.
+              </p>
+            </article>
+
+            <article class="servicio-card reveal">
+              <span class="servicio-num">02</span>
+              <h3>Branding</h3>
+              <p>
+                Definición de tono de voz, valores visuales y manual de marca,
+                para que cada pieza que publiques hable el mismo idioma.
+              </p>
+            </article>
+
+            <article class="servicio-card reveal">
+              <span class="servicio-num">03</span>
+              <h3>Diseño editorial</h3>
+              <p>
+                Catálogos, revistas, dossiers y publicaciones maquetadas con
+                jerarquía clara y una lectura cuidada.
+              </p>
+            </article>
+
+            <article class="servicio-card reveal">
+              <span class="servicio-num">04</span>
+              <h3>Diseño para impresión</h3>
+              <p>
+                Tarjetas, papelería, menús, señalética y todo lo que tu negocio
+                necesita en papel, listo para imprenta.
+              </p>
+            </article>
+
+            <article class="servicio-card reveal">
+              <span class="servicio-num">05</span>
+              <h3>Diseño de patrones</h3>
+              <p>
+                Creación de patrones y estampados gráficos aplicables a
+                distintas superficies y soportes, adaptados a la identidad
+                visual de cada marca.
+              </p>
+            </article>
+
+            <article class="servicio-card reveal">
+              <span class="servicio-num">06</span>
+              <h3>Diseño web</h3>
+              <p>
+                Webs sencillas y cuidadas para pequeños negocios: una presencia
+                online que refleja la misma calidad que tu marca.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTFOLIO -->
+      <section id="portfolio" class="portfolio">
+        <div class="section-inner">
+          <p class="eyebrow reveal">Trabajo seleccionado</p>
+          <h2 class="reveal">Portfolio</h2>
+
+          <div
+            class="portfolio-filtros reveal"
+            role="group"
+            aria-label="Filtrar proyectos por categoría"
+          >
+            <button class="filtro-btn is-active" data-filtro="todos">
+              Todos
+            </button>
+            <button class="filtro-btn" data-filtro="identidad-visual">
+              Identidad visual
+            </button>
+            <button class="filtro-btn" data-filtro="branding">Branding</button>
+            <button class="filtro-btn" data-filtro="editorial">
+              Editorial
+            </button>
+            <button class="filtro-btn" data-filtro="patrones">
+              Diseño de patrones
+            </button>
+            <button class="filtro-btn" data-filtro="diseno-web">
+              Diseño web
+            </button>
+            <button class="filtro-btn" data-filtro="impresion">
+              Diseño para impresión
+            </button>
+          </div>
+
+          <div class="portfolio-grid" id="portfolioGrid">
+            <!-- Los artículos se generan dinámicamente desde script.js (ver array `proyectos`) -->
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESO -->
+      <section id="proceso" class="proceso">
+        <div class="section-inner">
+          <p class="eyebrow reveal">Cómo trabajo</p>
+          <h2 class="reveal">Proceso de trabajo</h2>
+
+          <ol class="proceso-lista">
+            <li class="proceso-item reveal">
+              <span class="proceso-num">01</span>
+              <div>
+                <h3>Descubrimiento</h3>
+                <p>
+                  Hablamos de tu negocio, tu público y lo que necesitas
+                  comunicar. Sin este paso, ningún diseño funciona.
+                </p>
+              </div>
+            </li>
+            <li class="proceso-item reveal">
+              <span class="proceso-num">02</span>
+              <div>
+                <h3>Estrategia</h3>
+                <p>
+                  Defino el enfoque: qué debe transmitir tu marca y con qué
+                  herramientas visuales lo vamos a conseguir.
+                </p>
+              </div>
+            </li>
+            <li class="proceso-item reveal">
+              <span class="proceso-num">03</span>
+              <div>
+                <h3>Concepto</h3>
+                <p>
+                  Exploro direcciones creativas y te presento una propuesta
+                  sólida, justificada y alineada con tu marca.
+                </p>
+              </div>
+            </li>
+            <li class="proceso-item reveal">
+              <span class="proceso-num">04</span>
+              <div>
+                <h3>Diseño</h3>
+                <p>
+                  Desarrollo todas las piezas necesarias, cuidando cada detalle
+                  hasta que el sistema visual esté completo.
+                </p>
+              </div>
+            </li>
+            <li class="proceso-item reveal">
+              <span class="proceso-num">05</span>
+              <div>
+                <h3>Entrega</h3>
+                <p>
+                  Recibes todos los archivos organizados y listos para usar, con
+                  las indicaciones necesarias para aplicarlos.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- SOBRE MÍ -->
+      <section id="sobre-mi" class="sobre-mi">
+        <div class="section-inner sobre-mi-grid">
+          <div class="sobre-mi-imagen reveal">
+            <img
+              src="assets/jessica-retrato.png"
+              alt="Retrato de Jessica, diseñadora gráfica"
+              width="480"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="sobre-mi-manifiesto">
+              <p>"Diseño estratégico que conecta, comunica y cumple objetivos."</p>
+            </div>
+          </div>
+
+          <div class="sobre-mi-texto reveal">
+            <p class="eyebrow">Sobre mí</p>
+
+            <h2>Ideas que encuentran su forma.</h2>
+
+            <p>
+              Creo en el diseño como una forma de conectar ideas, personas y
+              proyectos. Mi recorrido comenzó en el ámbito de las artes visuales
+              y, desde entonces, he ido explorando distintas formas de
+              transformar una idea inicial en algo que pueda ser visto,
+              experimentado y compartido.
+            </p>
+
+            <p>
+              Desde 2018 participo en proyectos artísticos y muestras colectivas
+              en Córdoba, Buenos Aires y Barcelona, trabajando con arte
+              conceptual, pintura, libros de artista, grabado y fotografía. En
+              2023 me gradué como Técnica Superior en Artes Visuales por la
+              Universidad Provincial de Córdoba.
+            </p>
+
+            <p>
+              Con el tiempo, mi mirada se fue expandiendo hacia el diseño
+              gráfico y digital. Entre 2023 y 2024 comencé a profundizar en UX y
+              diseño digital, desarrollando landing pages, sistemas de gestión y
+              prototipos de alta fidelidad, entre ellos una aplicación
+              informativa para viajeros.
+            </p>
+
+            <p>
+              Actualmente trabajo en una imprenta de Marbella, donde continúo
+              profundizando en diseño gráfico, preparación de archivos,
+              materiales, procesos de impresión y producción. Esta experiencia
+              me permite comprender el diseño desde el primer nodo de una idea
+              hasta su materialización, tanto en soportes offline como online.
+            </p>
+
+            <p>
+              Al mismo tiempo, estoy cursando un Máster en Comunicación y
+              Marketing Digital y trabajando en proyectos vinculados al
+              marketing estratégico y la auditoría SEO, ampliando mi perspectiva
+              hacia la comunicación y la estrategia que hay detrás de cada
+              marca.
+            </p>
+
+            <p>
+              Quiero ser una diseñadora que, desde su propia naturalidad,
+              creatividad y visión del mundo, conecte con personas capaces de
+              encontrar magia en lo más mínimo.
+            </p>
+
+            <p>
+              Cuando trabajo con un proyecto, busco que el resultado no sea
+              solamente algo bonito. Quiero que mi cliente encuentre
+              satisfacción en lo que recibe, disfrute del proceso y pueda
+              comunicar su negocio con orgullo, claridad y una identidad propia
+              que le ayude a crecer y convertir su trabajo en oportunidades de
+              venta.
+            </p>
+            </div>
+
+            <div class="sobre-mi-bloque">
+              <h3>Herramientas</h3>
+              <p>Adobe Illustrator, Photoshop, InDesign, Figma, Wordpress</p>
+            </div>
+
+            <div class="sobre-mi-bloque">
+              <h3>Metodología</h3>
+              <p>
+                Descubrimiento → estrategia → concepto → diseño → entrega. Cada
+                proyecto sigue este mismo recorrido, adaptado a su escala.
+              </p>
+            </div>
+
+            <div class="sobre-mi-bloque">
+              <h3>Enfoque</h3>
+              <p>
+                Identidad visual · Diseño editorial · Diseño web · SEO · Marketing de contenidos · Estrategia de marca
+              </p>
+            </div>
+
+            <div class="sobre-mi-bloque">
+              <h3>Cada recurso visual de tu marca, comunica</h3>
+              <p>
+                Antes de conocerte, muchas veces una persona encuentra tu marca gracias a los recursos visuales que implementas.
+                 Tu web, redes y piezas gráficas forman parte de ese primer contacto.
+                  Cuidar ese escaparate digital no es solo estética: transmite confianza, te diferencia y despierta interés.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+      <section id="contacto" class="contacto">
+        <div class="section-inner contacto-grid">
+          <div class="contacto-texto reveal">
+            <p class="eyebrow">Hablemos</p>
+            <h2>¿Tienes un proyecto en mente?</h2>
+            <p>
+              Cuéntame en qué punto está tu marca y qué necesitas. Te respondo
+              personalmente.
+            </p>
+
+            <ul class="contacto-datos">
+              <li>
+                <a href="mailto:jessicabernasconi.es@gmail.com">jessicabernasconi.es@gmail.com</a>
+              </li>
+              
+              <li><a href="https://www.linkedin.com/in/jessicabernasconi/" target="_blank" rel="noopener">LinkedIn</a></li>
+            </ul>
+          </div>
+
+          <form class="contacto-form reveal" id="contactoForm" novalidate>
+            <div class="form-field">
+              <label for="nombre">Nombre</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                required
+                autocomplete="name"
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                autocomplete="email"
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="tipoProyecto">Tipo de proyecto</label>
+              <select id="tipoProyecto" name="tipoProyecto" required>
+                <option value="" disabled selected>
+                  Selecciona una opción
+                </option>
+                <option value="identidad-visual">Identidad visual</option>
+                <option value="branding">Branding</option>
+                <option value="editorial">Diseño editorial</option>
+                <option value="impresion">Diseño para impresión</option>
+                <option value="web">Diseño web</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="presupuesto">Presupuesto aproximado</label>
+              <select id="presupuesto" name="presupuesto">
+                <option value="" disabled selected>Selecciona un rango</option>
+                <option value="menos-500">Menos de 500€</option>
+                <option value="500-1500">500€ – 1.500€</option>
+                <option value="1500-3000">1.500€ – 3.000€</option>
+                <option value="mas-3000">Más de 3.000€</option>
+                <option value="no-seguro">Aún no lo tengo claro</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="mensaje">Mensaje</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <!-- Preparado para conectar a un servicio externo (Formspree, backend propio, etc.) en script.js -->
+            <button type="submit" class="btn btn-accent">Enviar mensaje</button>
+            <p
+              class="form-status"
+              id="formStatus"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-inner footer-inner">
+        <img
+          src="assets/logo.svg"
+          alt="Jessica Designs"
+          class="footer-logo"
+          width="140"
+          height="86"
+        />
+        <p>
+          &copy; <span id="anioActual"></span> Jessica. Diseño gráfico y de
+          identidad visual.
+        </p>
+        <a href="#inicio" class="footer-top">Volver arriba ↑</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
